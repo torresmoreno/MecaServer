@@ -1,0 +1,6 @@
+[submodule "mechplot"]
+	path = mechplot
+	url = https://github.com/jlblancoc/mechplot
+[submodule "mbde-matlab"]
+	path = mbde-matlab
+	url = https://github.com/MBDS/mbde-matlab
