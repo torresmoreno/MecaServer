@@ -21,6 +21,7 @@ classdef mbeMechModelCoriolis < mbeMechModelCoriolisBase
 
     % (Abstract) Read-Write properties
     properties(Access=public)
+        q_init_approx	% defined in mbeMechModelBase
         % List of installed sensors (cell of objects derived from mbeSensorBase)
         installed_sensors = { ...
                 mbeSensorGyroscope([1 0],[1 2],[1 2], 0)... 

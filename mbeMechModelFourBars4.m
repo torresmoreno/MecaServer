@@ -21,6 +21,7 @@ classdef mbeMechModelFourBars4 < mbeMechModelFourBarsExtraBase2
 
     % (Abstract) Read-Write properties
     properties(Access=public)
+        q_init_approx	% defined in mbeMechModelBase
         % List of installed sensors (cell of objects derived from mbeSensorBase)
         installed_sensors = { ...
 %            	mbeSensorPosIndex(5, deg2rad(1)) ...  % Encoder pos sensor: See mbeSensorPosIndex(q_index, std_dev_noise)
