@@ -348,8 +348,8 @@ while i<pasos
     qpp=mbeKinematicsSolver.accel_problem(mbs,q,qp,qpp(var));
     fichero(i,:)=[t(i), q', qp', qpp'];
     resultados(handles,mbs,q,qp,qpp)
-    %dibuja(mbs.mechanism_type,[q;mbs.fixed_points'],qp,qpp);
-    dibuja(mbs.mechanism_type,[q;mbs.fixed_points']);
+    dibuja(mbs.mechanism_type,[q;mbs.fixed_points'],qp,qpp);
+    %dibuja(mbs.mechanism_type,[q;mbs.fixed_points']);
     title(num2str(t(i)))
 end
 
