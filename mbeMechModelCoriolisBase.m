@@ -5,16 +5,16 @@ classdef mbeMechModelCoriolisBase < mbeMechModelBase
     % Modeled in Natural coordinates plus one relative angle coordinate 
     % at the left-hand side fixed end.
     %
-    %             2:(q3,q4)
-    %               +---------o
-    %               |       (xb,yb)
-    %               | 
-    %               | 
-    %     o---------+ 1:(q1,q2)
-    %    (xa,ya)       
-    %
-    %  - q5: Angle (xa,ya)-(q1,q2)
-    %
+    %                    2
+    %                     \ 
+    %                      \
+    %                       o 1
+    %                      / \
+    %                     /   \
+    %                    /     \
+    %                   /       \
+    %                  A         B
+    %                  <alpha    <beta
     %
     
 	% -----------------------------------------------------------------------------

@@ -6,17 +6,14 @@ classdef mbeMechModelFourBarsExtraBase2 < mbeMechModelBase
     % Modeled in Natural coordinates plus one relative angle coordinate
     % at the left-hand side fixed end.
     %
-    %             2:(q3,q4)
-    %              /+---------o    - q8: Angle (xb,yb)-(q3,q4)
-    %  3:(q6,q7) /  |       (xb,yb)
-    %            \  |
-    %             \ |
-    %     o---------+ 1:(q1,q2)
-    %    (xa,ya)
-    %
-    %  - q5: Angle (xa,ya)-(q1,q2)
-    %
-    %
+    %                    
+    %                      
+    %                  
+    %                 1 - - - - - - 2   
+    %                /               \
+    %               /                 \
+    %              A <alpha            B <beta 
+    %                        
     
 	% -----------------------------------------------------------------------------
 	% This file is part of MBDE-MATLAB.  See: https://github.com/MBDS/mbde-matlab
