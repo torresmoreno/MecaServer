@@ -1527,28 +1527,28 @@ set(handles.editPosGDL,'String',q(5))
 
 % Velocidad
 if (nargin>=4)
-    set(handles.editVelGDL,'String',qp(5))
-    set(handles.editVx1,'String',qp(1));
-    set(handles.editVy1,'String',qp(2));
-    set(handles.editModV1,'String',sqrt(qp(1)^2+qp(2)^2));
-    set(handles.editVx2,'String',qp(3));
-    set(handles.editVy2,'String',qp(4));
-    set(handles.editModV2,'String',sqrt(qp(3)^2+qp(4)^2));
-    set(handles.editDirV1,'String',rad2deg(atan((qp(2)/qp(1)))));
-    set(handles.editDirV2,'String',rad2deg(atan((qp(4)/qp(3)))));
+    set(handles.editVelGDL,'String',sprintf('%.03f',qp(5)))
+    set(handles.editVx1,'String', sprintf('%.03f',qp(1)));
+    set(handles.editVy1,'String',sprintf('%.03f',qp(2)));
+    set(handles.editModV1,'String',sprintf('%.03f',sqrt(qp(1)^2+qp(2)^2)));
+    set(handles.editVx2,'String',sprintf('%.03f',qp(3)));
+    set(handles.editVy2,'String',sprintf('%.03f',qp(4)));
+    set(handles.editModV2,'String',sprintf('%.03f',sqrt(qp(3)^2+qp(4)^2)));
+    set(handles.editDirV1,'String',sprintf('%.03f',rad2deg(atan((qp(2)/qp(1))))));
+    set(handles.editDirV2,'String',sprintf('%.03f',rad2deg(atan((qp(4)/qp(3))))));
 end
 
 % Aceleracion
 if (nargin>=5)
     qpp = varargin{2};
-    set(handles.editAx1,'String',qpp(1));
-    set(handles.editAy1,'String',qpp(2));
-    set(handles.editModA1,'String',sqrt(qpp(1)^2+qpp(2)^2));
-    set(handles.editAx2,'String',qpp(3));
-    set(handles.editAy2,'String',qpp(4));
-    set(handles.editModA2,'String',sqrt(qpp(3)^2+qpp(4)^2));
-    set(handles.editDirA1,'String',rad2deg(atan((qpp(2)/qpp(1)))));
-    set(handles.editDirA2,'String',rad2deg(atan((qpp(4)/qpp(3)))));
+    set(handles.editAx1,'String',sprintf('%.03f',qpp(1)));
+    set(handles.editAy1,'String',sprintf('%.03f',qpp(2)));
+    set(handles.editModA1,'String',sprintf('%.03f',sqrt(qpp(1)^2+qpp(2)^2)));
+    set(handles.editAx2,'String',sprintf('%.03f',qpp(3)));
+    set(handles.editAy2,'String',sprintf('%.03f',qpp(4)));
+    set(handles.editModA2,'String',sprintf('%.03f',sqrt(qpp(3)^2+qpp(4)^2)));
+    set(handles.editDirA1,'String',sprintf('%.03f',rad2deg(atan((qpp(2)/qpp(1))))));
+    set(handles.editDirA2,'String',sprintf('%.03f',rad2deg(atan((qpp(4)/qpp(3))))));
 end
 
 
